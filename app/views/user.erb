@@ -1,0 +1,12 @@
+<h1>flickr</h1>
+<ul>
+  <li><a href ="/ " id="signup">Sign Up</a></li>
+  <li><a href = "" >Explore</a></li>
+  <li><a href ="/photo/new">Upload a photo</a></li>
+  <li class="float-right"><a href="/logout" >Log Out</a></li>
+</ul>
+
+
+<% @photo.each do |t| %>
+	<img src="<%= "#{t.source}" %>">
+<% end %>
